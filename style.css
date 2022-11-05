@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BODY COLOR*/
+
+body{
+
+    background-color:lavender;
+}
+
+
+/* container part */
+
+.container{
+
+    display: flex;
+    height: 500px;
+    width: 900px;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: 15px 15px 20px black;
+    
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    top: 15%;
+    left: 30%;
+    position: absolute;
+    
+}
+
+.form h2{
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.box {
+    padding: 12px;
+    width: 65%;
+    margin: 5px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 15px;
+}
+.box:hover{
+
+    border: 1px solid #6C63FF ;
+}
+#btn{
+
+    padding: 12px 25px;
+    width: 40%;
+    margin-top: 35px;
+    margin-left: 44px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color:#6C63FF;
+    color: black;
+    font-weight: bold;
+}
+
+.form a{
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 55px;
+    color: black;
+}
+
+.form a:hover{
+    color:#6C63FF;
+
+}
+
+/* IMAGE PART */
+
+.rpic{
+   display: flex;
+   
+   
+
+   
+}
+
+.rpic img{
+
+    width: 500px;
+    height: 400px;
+    margin-left: 75%;
+
+
+}
+
+@media screen and (max-width:400px) {
+
+ 
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    body{
+
+     
+       
+    }
+    
+    
+    
+    
+    .container{
+       
+       
+        display: flex;
+        height: 700px;
+        width: 375px;
+        border: 1px solid black;
+        border-radius: 25px;
+        margin: auto;
+        margin-top: 30%;
+        margin-left: 10%;
+        background-color: white;
+        box-shadow: 15px 15px 20px black;
+        
+
+
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        margin-top: 50%;
+     
+       
+    }
+
+
+    .rpic img{
+        width: 0px;
+        height: 00px;
+        margin-left: 0%;
+  
+
+
+}
+}
