@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.0.1/chart.min.js"></script>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    body{
+            background: rgb(243, 240, 240);
+        }
+        div{
+            position:flex;
+            background: #fff;
+            width: 100%;
+            height: 45px;
+            padding-left: 65px;
+            padding-top: 12px;
+            font-family: century;
+           
+            
+        }
+        h4{
+            color: blue;
+            font-weight: 900;
+            font-size: medium;
+            font-family: sans-serif;
+
+        }
+
+        nav{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 230%;
+            background: #fff;
+            width: 50px;
+   }
+
+   .img{
+    width: 50px;;
+    height: 45px;
+    margin-left: 0%;
+   }
+   a{
+    position: relative;
+    display: table;
+    padding: 18px;
+    width: auto;
+   }
+  
+
+        .myclass{
+            list-style-type: none;
+            padding-inline-start: 0;
+        }
+        .container1{
+            background-color:#E9DDFF;
+            width: 335px;
+            height: 366px;
+            margin-left: 10%;
+            margin-top: 40px;
+            border-radius: 18px;
+
+        }
+        
+        .container2{
+            background-color:#fff;
+            width: 335px;
+            height: 366px;
+            margin-left: 40%;
+            border-radius: 15px;
+            margin-top: -24.7%;
+        
+        }
+
+        .container3{
+            
+            background-color:#10CE9C;
+            width: 335px;
+            height: 163px;
+            margin-left: 70%;
+            border-radius: 15px;
+            margin-top: -24.7%;
+
+
+        }
+
+        .container4{
+
+            background-color:#0F0FD1;
+            width: 335px;
+            height: 163px;
+            margin-left: 70%;
+            border-radius: 15px;
+            margin-top: 2.5%;
+
+
+
+        }
+
+        .hello{
+           
+            padding-top: 20px;
+            padding-left: 0px;
+            font-family: century;
+            font-weight:100;
+            
+         
+        }
+
+        .david{
+            font-weight: bold;
+            font-size:24px;
+        }
+
+        .main{
+            padding-top: 20px;
+        }
+        .output1{
+            padding-top:20px ;
+            color: #fff;
+            padding-left: 35px;
+            font-weight: lighter;
+            font-family: sans-serif;
+        }
+       .big{
+        padding-top: 30px;
+        padding-left: 30px;
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 30px;
+       }
+       .small{
+        font-size: 12px;
+       }
+       .small2{
+        font-size: 11px;
+        padding-left: 45px;
+       }
+
+       .longcontainer{
+
+        width: 1200px;
+        height: 366px;
+        background-color: #fff;
+        border-radius: 15px;
+        margin-left: 11%;
+        margin-top: 40px;
+       }
+
+       .summary{
+
+        color: black;
+        padding-left: 0%;
+        margin-top: 20px;
+        font-weight:600;
+       }
+
+       .box1{
+
+        background-color:#fff;
+            width: 235px;
+            height: 213px;
+            margin-left: 11%;
+            border-radius: 10px;
+            margin-top: 2.5%;
+            transition: 0.5s ease;
+
+       }
+
+       .box1:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+       }
+       .box2{
+        background-color:#fff;
+            width: 235px;
+            height: 213px;
+            margin-left: 33%;
+            border-radius: 10px;
+            margin-top: -14.4%;
+            transition: 0.5s ease;
+
+       }
+       .box2:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+       }
+       .box3{
+
+        background-color:#fff;
+            width: 235px;
+            height: 213px;
+            margin-left: 54%;
+            border-radius: 10px;
+            margin-top: -14.4%;
+            transition: 0.5s ease;
+
+       }
+
+       .box3:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+       }
+       .box4{
+
+        background-color:#fff;
+            width: 235px;
+            height: 213px;
+            margin-left: 76%;
+            border-radius: 10px;
+            margin-top: -14.4%;
+            transition: 0.5s ease;
+
+       }
+       .box4:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+       }
+
+       .box5{
+
+background-color:#fff;
+    width: 235px;
+    height: 213px;
+    margin-left: 11%;
+    border-radius: 10px;
+    margin-top: 2.5%;
+    transition: 0.5s ease;
+
+       }
+
+       .box5:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+       }
+
+       .box6{
+
+        background-color:#fff;
+            width: 235px;
+            height: 213px;
+            margin-left: 33%;
+            border-radius: 10px;
+            margin-top: -14.4%;
+            transition: 0.5s ease;
+
+
+       }
+
+       .box6:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+       }
+
+       .box7{
+        background-color:#fff;
+            width: 235px;
+            height: 213px;
+            margin-left: 54%;
+            border-radius: 10px;
+            margin-top: -14.4%;
+            transition: 0.5s ease;
+
+       }
+
+       .box7:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+       }
+       .box8{
+
+        background-color:#fff;
+            width: 235px;
+            height: 213px;
+            margin-left: 76%;
+            border-radius: 10px;
+            margin-top: -14.4%;
+            transition: 0.5s ease;
+
+       }
+       .box8:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+       }
+       .box9{
+        background-color:#fff;
+            width: 235px;
+            height: 213px;
+            margin-left: 11%;
+            border-radius: 10px;
+            margin-top: 2.5%;
+            transition: 0.5s ease;
+ }
+ .box9:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+       }
+
+ .box10{
+    background-color:#fff;
+            width: 235px;
+            height: 213px;
+            margin-left: 33%;
+            border-radius: 10px;
+            margin-top: -14.4%;
+            transition: 0.5s ease;
+ }
+
+ .box10:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+       }
+       .border{
+        border:1px solid #10CE9C;
+        width:70px;
+        margin-left: 40px;
+        padding: 3px 2px;
+        border-radius: 5px;
+        background-color:#d0fcef ;
+
+       }
+       .border3{
+        border:1px solid #d85e2e;
+        width:70px;
+        margin-left: 40px;
+        padding: 3px 2px;
+        border-radius: 5px;
+        background-color:#feefe3 ;
+
+       }
+       .undraw{
+        
+        text-align: right;
+      
+
+       }
+       
+    
+    </style>
+</head>
+
+
+<body>
+     <div>
+    <h4>LOGO</h4>
+   </div>
+
+   <nav>
+        <ul class="myclass">
+            <li>
+             
+                    <img class="img"  src="menu.png" alt="">
+                    
+               
+            </li>
+            <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#"><i class="fa-sharp fa-solid fa-address-card"></i></a></li>
+            <li><a href="#"><i class="fa-sharp fa-solid fa-robot"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-docker"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-plate-wheat"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-layer-group"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-square-check"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-heart-pulse"></i></a></li>
+            <li><a href="#"><i class="fa-sharp fa-solid fa-chart-column"></i></a></li>
+        </ul>
+    </nav>
+
+    
+<section>
+
+ <div class="container1">
+       
+         <span class="content">
+        <h2 class="hello">Hello,</h2>
+        <h1 class="david">David Turner!</h1><br>
+         
+        <p>Here is your review Summary</p><br>
+
+        <p style="padding-left:40px; color: grey;font-weight: lighter;">Maintenance requests</p>
+        <h2 style="padding-left: 40px;">12</h2><br>
+        <p style="padding-left: 40px;color: grey;font-weight: lighter;">Notifications</p>
+        <h2 style="padding-left: 40px;">25</h2> 
+        <img class="undraw" src="pic1.svg" width="80" height="80">
+
+        
+        <img class="img1" src="">
+        </span>
+
+</div>
+
+<div class="container2">
+
+            <h3 class="main">Maintenance requests</h3>
+            <h5 style="padding-top: 20px;padding-left: 40px;"> ipsum dolor sit amet</h5>
+            <h6 style="padding-top: 5px; padding-left:40px; color:rgb(132, 132, 132)">By Albert Gray</h6><br>
+            <h6 class="border" style="color:#10CE9C; ">Low priority</h6>
+            <hr>
+            <h5 style="padding-top: 20px;padding-left: 40px;">Lorem ipsum dolor sit amet</h5>
+            <h6 style="padding-top: 5px; padding-left:40px; color:rgb(132, 132, 132)">By Albert Gray</h6><br>
+            <h6 class="border" style="color:#10CE9C; ">Low priority</h6>
+            <hr>
+            <h5 style="padding-top: 20px;padding-left: 40px;">Lorem ipsum dolor sit amet</h5>
+            <h6 style="padding-top: 5px; padding-left:40px; color:rgb(132, 132, 132)">By Albert Gray</h6><br>
+            <h6 class="border3" style="color:#ce5310fe; ">Low priority</h6>
+            <h6 style="color: rgb(9, 9, 197); padding-top: 13px;">Viwe all requests  </h6>
+
+
+
+</div>
+
+        <div class="container3">
+          
+            <h3 class="output1"> Machine output 1</h3>
+            <h1 class="big">19M <small class="small">kg</small> </h1>
+            <h1 style="color: rgb(31, 138, 31)
+            ;"> <small class="small2">12.57%</small></h1>
+
+        </div>
+
+        <div class="container4">
+
+            <h3 class="output1"> Machine output 2</h3>
+            <h1 class="big">378.05 <small class="small">mtr</small> </h1>
+            <h1 style="color: rgb(255, 81, 0);"> <small class="small2">-15.36%</small></h1>
+
+
+        </div>
+      
+
+    </section>
+
+    <section>
+           <div class="longcontainer">
+            
+            <h3 class="summary"> Order summary</h3>
+            <h1 style="padding-top: 50px; font-size:50px;">7,462</h1>
+            <h5>Total orders (last 30 days)</h5><br>
+            <h5 style="color: gray; font-weight:lighter; padding-left:30px; padding-top: 15px;">You have a <span style="color: #10CE9C; font-weight: 700;"> 25% growth </span> in comparison <br>with previous month</h5>
+            <br>
+            <h5 style="color: gray; font-weight:lighter; padding-left:30px; padding-top: 15px;">Your target for this month is <span style="font-weight:700 ;">6,000</span></h5>
+            
+           
+
+           </div>
+          
+
+           
+           
+
+    </section>
+
+ 
+
+    <section class="row1">
+        <div class="box1"> 
+            
+            <h3 style="padding-top:80px; font-weight: 600;">Administration</h3><br>
+            <h6 style="font-weight: lighter; color:rgb(132, 132, 132)">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</h6>
+        </div>
+
+        <div class="box2"> 
+            
+            <h3 style="padding-top:80px; font-weight: 600;">Manufacturing</h3><br>
+            <h6 style="font-weight: lighter; color:rgb(132, 132, 132)">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</h6>
+        </div>
+
+        
+
+        <div class="box3">
+            <h3 style="padding-top:80px; font-weight: 600;">KPI</h3><br>
+            <h6 style="font-weight: lighter; color:rgb(132, 132, 132)">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</h6>
+            
+        </div>
+
+        <div class="box4"> 
+            <h3 style="padding-top:80px; font-weight: 600;">Quality</h3><br>
+            <h6 style="font-weight: lighter; color:rgb(132, 132, 132)">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</h6>
+        </div>
+
+      
+    </section>
+
+    <section class="row2">
+        <div class="box5"> 
+            <h3 style="padding-top:80px; font-weight: 600;">E&T</h3><br>
+            <h6 style="font-weight: lighter; color:rgb(132, 132, 132)">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</h6>
+        </div>
+
+        <div class="box6"> 
+            <h3 style="padding-top:80px; font-weight: 600;">Supply Chain</h3><br>
+            <h6 style="font-weight: lighter; color:rgb(132, 132, 132)">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</h6>
+        </div>
+
+        <div class="box7"> 
+            <h3 style="padding-top:80px; font-weight: 600;">Initiative Management</h3><br>
+            <h6 style="font-weight: lighter; color:rgb(132, 132, 132)">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</h6>
+        </div>
+
+        <div class="box8"> 
+            <h3 style="padding-top:80px; font-weight: 600;">Health & Safety</h3><br>
+            <h6 style="font-weight: lighter; color:rgb(132, 132, 132)">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</h6>
+        </div>
+
+      
+    </section>
+
+    <section class="row3">
+        <div class="box9"> 
+            <h3 style="padding-top:80px; font-weight: 600;">Organizations & Change</h3><br>
+            <h6 style="font-weight: lighter; color:rgb(132, 132, 132)">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</h6>
+        </div>
+
+        <div class="box10"> 
+            <h3 style="padding-top:80px; font-weight: 600;">Advanced Analytics</h3><br>
+            <h6 style="font-weight: lighter; color:rgb(132, 132, 132)">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</h6>
+        </div>
+
+      
+    </section>
+
+
+    
+    
+</body>
+</html>
